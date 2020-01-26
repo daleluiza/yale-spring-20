@@ -4,6 +4,10 @@ body {
 	font-family: helvetica, arial, sans-serif;
 	font-size: 12px;
 	letter-spacing: .2em;
-	line-height: 32px;
+	line-height: 22px;
 	color: black;
+}
+
+p {
+	width: 60%;
 }
