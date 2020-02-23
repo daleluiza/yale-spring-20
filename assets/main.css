@@ -2,12 +2,62 @@ body {
 	background: #d4d4d4;
 	margin: 30px;
 	font-family: helvetica, arial, sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	letter-spacing: .2em;
-	line-height: 22px;
+	line-height: 1.5em;
 	color: black;
 }
 
-p {
-	width: 60%;
+.box {
+	width: 40%;
+	border: .05em solid black;
+	border-radius: 1em;
+	padding: 2em;
+	margin-bottom: 3em;
+}
+
+.box.wide {
+	width: 90%;
+	border: .05em solid black;
+	border-radius: 1em;
+	padding: 2em;
+	margin-bottom: 2em;
+}
+
+
+.box:hover {
+	background: black;
+	color: white;
+}
+
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+img {
+	max-width: 100%;
+}
+
+.credit {
+	color: white;
+	position: fixed;
+	bottom: 1em;
+	left: 1.5em;
+}
+
+@media only screen and (max-width: 768px) {
+	.flex-container {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.box {
+		width: auto;
+		margin-bottom: 2em;
+	}
+
 }
