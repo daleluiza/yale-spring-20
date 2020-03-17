@@ -73,13 +73,25 @@ a:active {
 
 @media only screen and (max-width: 768px) {
 	.flex-container {
+		display: flex;
 		flex-direction: column;
+		flex-wrap: nowrap;
 		justify-content: space-around;
 	}
 
 	.box {
 		width: auto;
-		margin-bottom: 2em;
+	}
+
+	.box.wide {
+		width: auto;
+	}
+
+	.credit {
+		text-align: center;
+		position: relative;
+		bottom: 0;
+		left: 0;
 	}
 
 }
