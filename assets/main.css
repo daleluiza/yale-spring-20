@@ -45,13 +45,13 @@ img {
 
 /* unvisited link */
 a:link {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -71,6 +71,13 @@ a:active {
 	text-align: right;
 }
 
+.credit {
+	font-size: 11px;
+	letter-spacing: .1em;
+	padding-left: 2em;
+	line-height: 1.5em;
+}
+
 @media only screen and (max-width: 768px) {
 	.flex-container {
 		display: flex;
@@ -88,7 +95,6 @@ a:active {
 	}
 
 	.credit {
-		text-align: center;
 		position: relative;
 		bottom: 0;
 		left: 0;
